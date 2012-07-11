@@ -8,10 +8,10 @@ import tinkerer.paths
 # **************************************************************
 
 # Change this to the name of your blog
-project = 'Phobology'                   
+project = 'signal0'                   
 
 # Change this to the tagline of your blog
-tagline = 'Less of the phobo, more of the ology...'
+tagline = ''
 
 # Change this to your name
 author = 'Michael Barrett'
@@ -20,7 +20,7 @@ author = 'Michael Barrett'
 copyright = '2012, ' + author         
 
 # Change this to your blog root URL (required for RSS feed)
-website = 'http://phobologic.com/'
+website = 'http://signal0.com/'
 
 # **************************************************************
 # More tweaks you can do
