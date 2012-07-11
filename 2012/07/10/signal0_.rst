@@ -12,9 +12,9 @@ there is a process with a PID of 777:
 
 .. code-block:: console
 
-    [0]mike@fenris:~>kill -0 777
+    $ kill -0 777
     -bash: kill: (777) - No such process
-    [1]mike@fenris:~>echo $?
+    $ echo $?
     1
 
 Or, used in a simple shell script that tells your nginx process is running:
