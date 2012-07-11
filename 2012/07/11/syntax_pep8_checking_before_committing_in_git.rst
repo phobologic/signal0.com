@@ -34,7 +34,9 @@ with the help of pip:
 At this point you're all set.  Say you write some code and you manually want
 to check it for syntax errors and pep8 violations?  You just run
 *flake8 <filename>* and it'll tell you how badly you've done.  For example,
-say I wrote this lovely piece of code::
+say I wrote this lovely piece of code:
+
+.. code-block:: python
 
     #!/usr/bin/python
 
