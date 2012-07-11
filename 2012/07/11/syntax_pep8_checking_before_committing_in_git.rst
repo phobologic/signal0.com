@@ -13,6 +13,8 @@ other people might see is pep8 compliant?  Fortunately this is very possible,
 and you can even add some syntax checking as well thanks to Tarek Ziade's
 awesome flake8_ script.
 
+.. more::
+
 So, first of all you're going to need to get flake8 installed.  Easy enough
 with the help of pip:
 
