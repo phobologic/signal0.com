@@ -10,7 +10,7 @@ process ID in unix there are a lot of ways to check - but the way I think is
 the best is to execute a 'kill -0 <pid>'.  On my laptop I want to check if
 there is a process with a PID of 777::
 
-.. highlight:: console
+    .. highlight:: console
 
     [0]mike@fenris:~>kill -0 777
     -bash: kill: (777) - No such process
