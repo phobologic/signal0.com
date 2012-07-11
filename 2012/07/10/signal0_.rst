@@ -41,6 +41,6 @@ that blog.  Well here we are two years later.  Lets see if I'll keep up on
 this.
 
 .. author:: default
-.. categories:: none
+.. categories:: unix, shell
 .. tags:: none
 .. comments::
