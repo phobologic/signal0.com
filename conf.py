@@ -20,7 +20,7 @@ author = 'Michael Barrett'
 copyright = '2012, ' + author         
 
 # Change this to your blog root URL (required for RSS feed)
-website = 'http://phobologic.com/blog/html/'                              
+website = 'http://phobologic.com/'                              
 
 # **************************************************************
 # More tweaks you can do
