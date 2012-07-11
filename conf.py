@@ -33,7 +33,8 @@ disqus_shortname = 'signal0'
 html_favicon = 'tinkerer.ico'           
 
 # Pick another Tinkerer theme or use your own
-html_theme = "modern5"
+#html_theme = "modern5"
+html_theme = "signal0"
 
 # Theme-specific options, see docs
 html_theme_options = { }                                  
