@@ -1,6 +1,11 @@
 Modifying Tinkerer Themes
 =========================
 
+*Update: After I wrote this I ended up going back to the 'native' pygments
+style.  The reason was that monokai didn't seem to produce css for the shell
+console code-block type, and I wanted those blocks to be pretty like the rest
+of them.*
+
 So one of the reasons it took me so long to create this site was that I had
 a really hard time finding a system I liked to create it with.  My thought
 process on that is probably the content of another blog post, but since I'm
