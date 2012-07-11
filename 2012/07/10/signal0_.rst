@@ -17,6 +17,21 @@ there is a process with a PID of 777:
     [1]mike@fenris:~>echo $?
     1
 
+Or, used in a simple shell script that tells your nginx process is running:
+
+.. code-block:: sh
+    :linenos:
+
+    #!/bin/sh
+
+    _pid=`cat /var/run/nginx.pid`
+    if kill -0 $_pid 2> /dev/null
+    then
+        echo "nginx pid $_pid is running."
+    else
+        echo "nginx pid $_pid is not running."
+    fi
+
 A while back (like 2010?) I was looking to start a blog to write about various
 techy things I was working on and so I started looking for domains.  Took a
 look, and sure enough signal0.com was available.
