@@ -60,7 +60,7 @@ templates_path = ['_templates']
 html_static_path = ['_static', tinkerer.paths.static]
 
 # Add other theme paths here
-html_theme_path = [tinkerer.paths.themes]                 
+html_theme_path = [tinkerer.paths.themes, 'themes']
 
 # Add file patterns to exclude from build
 exclude_patterns = ["drafts/*"]                                     
