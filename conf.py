@@ -27,7 +27,7 @@ website = 'http://signal0.com/'
 # **************************************************************
 
 # Add your Disqus shortname to enable comments powered by Disqus
-disqus_shortname = None                                   
+disqus_shortname = 'signal0'
 
 # Change your favicon (new favicon goes in _static directory)
 html_favicon = 'tinkerer.ico'           
@@ -43,7 +43,7 @@ html_theme_options = { }
 rss_service = None
 
 # Number of blog posts per page
-posts_per_page = 2
+posts_per_page = 5
 
 # **************************************************************
 # Edit lines below to further customize Sphinx build
