@@ -6,6 +6,7 @@ style.  The reason was that monokai didn't seem to produce css for the shell
 console code-block type, and I wanted those blocks to be pretty like the rest
 of them.*
 
+
 So one of the reasons it took me so long to create this site was that I had
 a really hard time finding a system I liked to create it with.  My thought
 process on that is probably the content of another blog post, but since I'm
@@ -80,6 +81,11 @@ python interactive interpreter:
 As you can see there's a ton of styles available on my system.  In the end you
 have to play with them to figure out which one you like best, but in the end
 I settled on **monokai**.
+
+*Update: This is not necessarily true.  Favio Manriquez Leon of
+http://favrik.com/ posted a page that gives examples of all the standard
+pygments styles at 
+http://blog.favrik.com/2011/02/22/preview-all-pygments-styles-for-your-code-highlighting-needs/*
 
 In order to tell Sphinx to tell Pygments to use a new theme, there are a few
 things that need to be changed.  First lets change our custom theme.  To do
