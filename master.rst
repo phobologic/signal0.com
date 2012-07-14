@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2012/07/14/calibrating_i_phone_pad_pod__home_button
    2012/07/11/examples_of_pygment_styles
    2012/07/11/signal0_now_on_github
    2012/07/11/syntax_pep8_checking_before_committing_in_git
