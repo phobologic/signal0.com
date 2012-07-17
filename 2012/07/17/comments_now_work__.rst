@@ -8,6 +8,6 @@ so responsive on this awesome piece of code!
 
 
 .. author:: default
-.. categories:: signal0, tinkere
+.. categories:: signal0, tinkerer
 .. tags:: none
 .. comments::
