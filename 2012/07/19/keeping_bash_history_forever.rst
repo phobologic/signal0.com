@@ -10,7 +10,7 @@ look at how you did something.
 What's even better is that bash saves your history to a file whenever you
 logout of your shell.  While that's awesome, it becomes a little less awesome
 is that the size of your history file is limited (dictated by the
-**HISTFILESIZE** environment variable) is limited (by default to 500 lines,
+**HISTFILESIZE** environment variable, by default to 500 lines,
 at least on Mountain Lion).  There are tons of times when I go to look back
 through my history and the command I needed was missing because of this.
 
