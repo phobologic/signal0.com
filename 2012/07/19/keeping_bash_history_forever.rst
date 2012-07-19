@@ -180,7 +180,9 @@ forgetting syntax!):
     mike             273   2.9  0.5  2727352  79176   ??  S     2:04PM   1:31.09 /Applications/iTerm.app/Contents/MacOS/iTerm -psn_0_53261
     $ hnote "Yay, I remembered how to use the head command."
 
-And here's the relevant output in my history file::
+And here's the relevant output in my history file:
+
+.. code-block::
 
     : [Thu Jul 19 10:15:01 PDT 2012] 2221 mike /Users/mike; pwd
     : [Thu Jul 19 10:15:11 PDT 2012] 2221 mike /Users/mike/git/boto; cd git/boto
