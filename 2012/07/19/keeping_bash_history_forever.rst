@@ -193,15 +193,15 @@ Thats it!  Let me know if you have any issues with this or have any questions.
 
 ::
 
-    One last thing: there are a few bugs in this.  Mostly they just involve the
-    repeating of some commands into your history file.  This happens when you
-    do things like open an editor (or whatever) then background it (with ^Z).
-    Your prompt is then redrawn, but you didn't execute a command, so you end
-    up with the last command getting echo'd into your history file.  The hnote
-    command has a similar bug and it almost makes me think I should just do
-    away with HISTIGNORE completely.  If you have any ideas on how to make this
-    better (I'm considering writing a python script for it) please let me know!
-    Thanks!
+    One last thing: there are a few bugs in this.  Mostly they just involve
+    the repeating of some commands into your history file.  This happens
+    when you do things like open an editor (or whatever) then background
+    it (with ^Z).  Your prompt is then redrawn, but you didn't execute a
+    command, so you end up with the last command getting echo'd into your
+    history file.  The hnote command has a similar bug and it almost makes
+    me think I should just do away with HISTIGNORE completely.  If you have
+    any ideas on how to make this better (I'm considering writing a python
+    script for it) please let me know!  Thanks!
 
 
 .. author:: default
