@@ -182,7 +182,7 @@ forgetting syntax!):
 
 And here's the relevant output in my history file:
 
-.. code-block::
+.. code-block:: console
 
     : [Thu Jul 19 10:15:01 PDT 2012] 2221 mike /Users/mike; pwd
     : [Thu Jul 19 10:15:11 PDT 2012] 2221 mike /Users/mike/git/boto; cd git/boto
