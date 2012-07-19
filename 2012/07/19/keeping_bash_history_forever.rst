@@ -122,7 +122,7 @@ a # representing what command # it was during that session.  I don't really
 care about that and it ruins the ability to cut and paste commands from the
 forever-history file- hence the sed command.
 
-.. note::
+::
 
     I'm not an expert on regular expressions, and this may not be the very
     best one.  If you have a better one that you feel will work better,
@@ -191,7 +191,7 @@ And here's the relevant output in my history file::
 
 Thats it!  Let me know if you have any issues with this or have any questions.
 
-.. note::
+::
 
     One last thing: there are a few bugs in this.  Mostly they just involve the
     repeating of some commands into your history file.  This happens when you
