@@ -90,6 +90,9 @@ first part of that:
 
     echo : [\$(date)] $$ $USER \$OLDPWD\;
 
+**Update:** I realized that using $PWD wasn't actually working right.  You
+want $OLDPWD instead.
+
 So first it puts in a ':' followed by the date in brackets, followed by the
 process id of the shell, then the logged in username and finally the current
 working directory followed by a ';'.
