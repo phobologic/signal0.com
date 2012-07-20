@@ -8,8 +8,8 @@ commands you run, allowing you to easily repeat commands or to go back and
 look at how you did something.
 
 What's even better is that bash saves your history to a file whenever you
-logout of your shell.  While that's awesome, it becomes a little less awesome
-is that the size of your history file is limited (dictated by the
+logout of your shell.  While that's awesome, it's little less awesome
+that the size of your history file is limited (dictated by the
 **HISTFILESIZE** environment variable, by default to 500 lines,
 at least on Mountain Lion).  There are tons of times when I go to look back
 through my history and the command I needed was missing because of this.
@@ -50,7 +50,7 @@ through all my long winded explanation and just want to play with this:
     }
 
     # used to keep my history forever
-    PROMPT_COMMAND="[ -d $HOME/.history ] || mkdir -p $HOME/.history; echo : [\$(date)] $$ $USER \$PWD\; \$(history 1 | sed -E 's/^[[:space:]]+[0-9]*[[:space:]]+//g') >> $HOME/.history/bash_history-\`date +%Y%m%d\`"
+    PROMPT_COMMAND="[ -d $HOME/.history ] || mkdir -p $HOME/.history; echo : [\$(date)] $$ $USER \$OLDPWD\; \$(history 1 | sed -E 's/^[[:space:]]+[0-9]*[[:space:]]+//g') >> $HOME/.history/bash_history-\`date +%Y%m%d\`"
 
 Now lets go into the environment variable that makes the forever-history
 possible.  It's called *PROMPT_COMMAND*.  Here's the info about it from the
@@ -67,7 +67,7 @@ So using that, here's my *PROMPT_COMMAND* variable:
 
 .. code-block:: bash
     
-    PROMPT_COMMAND="[ -d $HOME/.history ] || mkdir -p $HOME/.history; echo : [\$(date)] $$ $USER \$PWD\; \$(history 1 | sed -E 's/^[[:space:]]+[0-9]*[[:space:]]+//g') >> $HOME/.history/bash_history-\`date +%Y%m%d\`"
+    PROMPT_COMMAND="[ -d $HOME/.history ] || mkdir -p $HOME/.history; echo : [\$(date)] $$ $USER \$OLDPWD\; \$(history 1 | sed -E 's/^[[:space:]]+[0-9]*[[:space:]]+//g') >> $HOME/.history/bash_history-\`date +%Y%m%d\`"
 
 Thats it.
 Ok, so lets step through each of the pieces of that.  First we have this bit:
@@ -88,7 +88,7 @@ first part of that:
 
 .. code-block:: bash
 
-    echo : [\$(date)] $$ $USER \$PWD\;
+    echo : [\$(date)] $$ $USER \$OLDPWD\;
 
 So first it puts in a ':' followed by the date in brackets, followed by the
 process id of the shell, then the logged in username and finally the current
@@ -174,7 +174,7 @@ forgetting syntax!):
     MANIFEST.in     bin             docs            setup.py
     $ ps auwwwx | head 3
     head: 3: No such file or directory
-    [1]mike@sigyn:~/git/boto>ps auwwwx | head -3
+    $ ps auwwwx | head -3
     USER             PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
     mike             267   5.7  0.7  3944824 123800   ??  S     2:04PM  14:21.83 /Applications/Adium.app/Contents/MacOS/Adium -psn_0_28679
     mike             273   2.9  0.5  2727352  79176   ??  S     2:04PM   1:31.09 /Applications/iTerm.app/Contents/MacOS/iTerm -psn_0_53261
