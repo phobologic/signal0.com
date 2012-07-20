@@ -43,7 +43,8 @@ I was following those 3 rules:
         else:
             if len(line) > 72:
                 exit_code = 1
-                print "E%d: No line should be over 72 characters long." % (lineno,)
+                print "E%d: No line should be over 72 characters long." % (
+                        lineno,)
 
     sys.exit(exit_code)
 
