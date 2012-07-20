@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2012/07/20/checking_git_commit_message_format_before_commit_ing
    2012/07/19/keeping_bash_history_forever
    2012/07/17/comments_now_work__
    2012/07/14/calibrating_i_phone_pad_pod__home_button
