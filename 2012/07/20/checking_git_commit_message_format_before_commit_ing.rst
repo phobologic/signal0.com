@@ -22,35 +22,34 @@ I was following those 3 rules:
 
 .. code-block:: python
 
-    #!/usr/bin/python
-
-    import sys
-
-    commit_msg = open(sys.argv[1], 'r')
-
-    exit_code = 0
-    for lineno, line in enumerate(commit_msg):
-        line = line.strip()
-        if lineno == 0:
-            if len(line) > 50:
-                exit_code = 1
-                print "E%d: First line should be less than 50 characters." % (
-                        lineno,)
-        elif lineno == 1:
-            if line:
-                exit_code = 1
-                print "E%d: Second line should be empty." % (lineno,)
-        else:
-            # Don't think it matters if a commented line is 72 characters or
-            # not, so we'll ignore them
-            if line.startswith('#'):
-                continue
-            if len(line) > 72:
-                exit_code = 1
-                print "E%d: No line should be over 72 characters long." % (
-                        lineno,)
-
-    sys.exit(exit_code)
+    #!/usr/bin/python                     
+                                          
+    import sys                            
+    import os                             
+                                          
+    exit_code = 0                         
+    with open(sys.argv[1]) as commit_msg: 
+        for lineno, line in enumerate(commit_msg):
+            line = line.strip()           
+            if lineno == 0:               
+                if len(line) > 50:        
+                    exit_code = 1         
+                    print "# E%d: First line should be less than 50 " \
+                            "characters." % (lineno,)
+            elif lineno == 1:             
+                if line:                  
+                    exit_code = 1         
+                    print "# E%d: Second line should be empty." % (lineno,)
+            else:                         
+                if line.startswith('#'):  
+                    # ignore comment lines                                          
+                    continue              
+                if len(line) > 72:        
+                    exit_code = 1         
+                    print "# E%d: No line should be over 72 characters " \
+                            "long." % ( lineno,)      
+                                          
+    sys.exit(exit_code)                   
 
 I went ahead and dropped that code into **.git/hooks/check-git-commit.py** then
 made a soft link to it from **.git/hooks/commit-msg**.  Basically if there is
