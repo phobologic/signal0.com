@@ -41,6 +41,10 @@ I was following those 3 rules:
                 exit_code = 1
                 print "E%d: Second line should be empty." % (lineno,)
         else:
+            # Don't think it matters if a commented line is 72 characters or
+            # not, so we'll ignore them
+            if line.startswith('#'):
+                continue
             if len(line) > 72:
                 exit_code = 1
                 print "E%d: No line should be over 72 characters long." % (
