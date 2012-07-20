@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Test
 
 import tinkerer
 import tinkerer.paths        
@@ -30,7 +31,7 @@ website = 'http://signal0.com/'
 disqus_shortname = 'signal0'
 
 # Change your favicon (new favicon goes in _static directory)
-html_favicon = 'tinkerer.ico'           
+html_favicon = 'favicon.ico'           
 
 # Pick another Tinkerer theme or use your own
 #html_theme = "modern5"
