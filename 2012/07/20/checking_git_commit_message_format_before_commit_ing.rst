@@ -25,7 +25,6 @@ I was following those 3 rules:
     #!/usr/bin/python                     
                                           
     import sys                            
-    import os                             
                                           
     exit_code = 0                         
     with open(sys.argv[1]) as commit_msg: 
