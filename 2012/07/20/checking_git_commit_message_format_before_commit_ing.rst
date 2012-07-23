@@ -1,6 +1,11 @@
 Checking git commit message format before commit'ing
 ====================================================
 
+**UPDATE:** You can't actually use the python script directly as your commit
+hook due to the need for a TTY.  Instead I've updated these instructions with
+a way to call it from a simple shell script which provides a TTY.  Sorry for
+the misinformation!
+
 Seems like I've been on a 'style guide' tear lately.  Once I got git yelling at
 me when I tried to check in non-pep8 compliant code a coworker of mine pointed
 out that git commit messages have a 'style guide' of sorts.  Of course now I
@@ -90,14 +95,21 @@ I was following those 3 rules:
         # break out of the while loop and exit cleanly
         break
 
-I went ahead and dropped that code into **.git/hooks/check-git-commit.py** then
-made a soft link to it from **.git/hooks/commit-msg**.  Basically if there is
-anything wrong with your commit message format that will stop your commit from
-happening (because it exits with a non-zero status) and print out all the
-things you did wrong.
+I went ahead and dropped that code into **.git/hooks/check-git-commit.py**.
+Then I put the following shell script into **/.git/hooks/commit-msg**:
 
-**Update:** The old script I had here would fail and not let you re-edit the
-message.  That's not the case with this new one.
+.. code-block:: shell
+
+    #!/bin/sh
+
+    exec < /dev/tty
+    .git/hooks/check-git-commit.py $1
+
+Basically if there is anything wrong with your commit message format that will
+stop your commit from happening (because it exits with a non-zero status) and
+ask if you want to re-edit the message.  If so it gives you the standard
+git commit message in your $EDITOR and provides a list of errors at the bottom
+of the git comments.
 
 BTW, you can get the latest version of my git hooks in my `github repo`_.
 
