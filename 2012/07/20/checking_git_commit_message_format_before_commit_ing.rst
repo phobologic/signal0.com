@@ -98,7 +98,7 @@ I was following those 3 rules:
 I went ahead and dropped that code into **.git/hooks/check-git-commit.py**.
 Then I put the following shell script into **/.git/hooks/commit-msg**:
 
-.. code-block:: shell
+.. code-block:: bash
 
     #!/bin/sh
 
