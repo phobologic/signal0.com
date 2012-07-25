@@ -16,6 +16,7 @@ so here it is:
 
 .. image:: /_static/images/vim_crosshairs.jpg
 
+
 .. more::
 
 Setting this up is actually pretty easy.  The full explanation of it can be
