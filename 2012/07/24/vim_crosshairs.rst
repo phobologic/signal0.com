@@ -22,7 +22,9 @@ Setting this up is actually pretty easy.  The full explanation of it can be
 found on the `vim wikia site`_.  The way I have it setup is almost exactly
 like the example they give - when you hit '\c' the crosshairs are toggled on
 or off.  To get that going, put the following in your **.vimrc** or your
-custom colors file::
+custom colors file:
+
+.. code-block:: console
 
     hi CursorLine   cterm=NONE ctermbg=235
     hi CursorColumn cterm=NONE ctermbg=235
