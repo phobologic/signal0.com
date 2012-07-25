@@ -16,9 +16,6 @@ so here it is:
 
 .. image:: /_static/images/vim_crosshairs.jpg
 
-
-.. more::
-
 Setting this up is actually pretty easy.  The full explanation of it can be
 found on the `vim wikia site`_.  The way I have it setup is almost exactly
 like the example they give - when you hit '\c' the crosshairs are toggled on
