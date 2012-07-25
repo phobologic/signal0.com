@@ -34,6 +34,6 @@ custom colors file:
 
 
 .. author:: default
-.. categories:: none
+.. categories:: vim
 .. tags:: none
 .. comments::
