@@ -1,6 +1,9 @@
 Syntax+pep8 checking before committing in git
 =============================================
 
+*UPDATE 2012/08/13:* I've updated the git hook code per suggestions from folks
+in the comments.
+
 I write quite a bit of code in python.  As a considerate python programmer I
 tend to try to follow PEP8_ as best I can.  That said, even though I've been
 working with python & pep8 for years it's still easy to forget the little
@@ -85,8 +88,8 @@ file we check in.  First, here's the hook itself.  You want to save this as
 
     #!/bin/sh
     # Auto-check for pep8 so I don't check in bad code
+    FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -e '\.py$')
 
-    FILES=$(git diff --cached --name-status | grep -v ^D | awk '$1 $2 { print $2}' | grep -e .py$)
     if [ -n "$FILES" ]; then
         flake8 -r $FILES
     fi
