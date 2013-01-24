@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/01/23/mountain_lion___chrome___2_finger_swipe____ugh___
    2012/07/24/vim_crosshairs
    2012/07/20/checking_git_commit_message_format_before_commit_ing
    2012/07/19/keeping_bash_history_forever
