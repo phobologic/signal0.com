@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/01/27/error
    2013/01/23/mountain_lion___chrome___2_finger_swipe____ugh___
    2012/07/24/vim_crosshairs
    2012/07/20/checking_git_commit_message_format_before_commit_ing
@@ -15,4 +16,5 @@ Sitemap
    2012/07/11/syntax_pep8_checking_before_committing_in_git
    2012/07/11/modifying_tinkerer_themes
    2012/07/10/signal0_
+   pages/error
    pages/about
