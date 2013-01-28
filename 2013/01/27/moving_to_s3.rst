@@ -25,9 +25,9 @@ It filled all my needs, specifically the sync functionality.  So I installed it
 on my Mac laptop using `Homebrew`_.  Once that was done, I went ahead and wrote
 a simple script that would handle a few things for me:
 
-1. Run `Tinkerer`_ to compile the static site.
-1. Updated my sitemap using the `Google Sitemap Generator`_
-1. Call `s3cmd`_ to push my site up to S3.
+#. Run `Tinkerer`_ to compile the static site.
+#. Updated my sitemap using the `Google Sitemap Generator`_
+#. Call `s3cmd`_ to push my site up to S3.
 
 I've gone ahead and pushed that script up to github (along with the rest of
 the site).  You can find it here: `s3push`_.
