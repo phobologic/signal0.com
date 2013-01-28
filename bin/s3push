@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+SITEDIR=$HOME/git/signal0
+SITEMAPDIR=$SITEDIR/sitemap
+
+$SITEMAPDIR/sitemap_gen.py --config=$SITEMAPDIR/sitemap_conf.xml
+s3cmd --exclude='.git/*' sync $SITEDIR/ s3://signal0.com/

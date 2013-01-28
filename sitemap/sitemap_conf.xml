@@ -37,12 +37,12 @@
 -->
  <site
       base_url="http://signal0.com/"
-      store_into="blog/html/sitemap.xml"
+      store_into="/Users/mike/git/signal0/blog/html/sitemap.xml"
       verbose="1"
       sitemap_type="web">
  
   <directory
-      path="/home/mike/signal0/signal0/blog/html"
+      path="/Users/mike/git/signal0/blog/html"
       url="http://signal0.com/"/>
 
   <!-- ********************************************************
