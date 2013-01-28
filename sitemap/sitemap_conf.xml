@@ -36,13 +36,14 @@
                  (Example: sitemap_type="news")
 -->
  <site
-  base_url="http://signal0.com/"
-  store_into="blog/html/sitemap.xml"
-  verbose="1"
-  sitemap_type="web"
- >
+      base_url="http://signal0.com/"
+      store_into="blog/html/sitemap.xml"
+      verbose="1"
+      sitemap_type="web">
  
-  <directory  path="/home/mike/signal0/signal0/blog/html"    url="http://signal0.com/" />
+  <directory
+      path="/home/mike/signal0/signal0/blog/html"
+      url="http://signal0.com/"/>
 
   <!-- ********************************************************
           FILTERS
