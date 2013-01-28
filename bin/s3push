@@ -7,4 +7,4 @@ SITEMAPDIR=$SITEDIR/sitemap
 cd $SITEDIR
 tinker -b
 $SITEMAPDIR/sitemap_gen.py --config=$SITEMAPDIR/sitemap_conf.xml
-s3cmd --exclude='.git/*' sync $SITEDIR/ s3://signal0.com/
+s3cmd --exclude='.git/*' sync $SITEDIR/blog/html/ s3://signal0.com/
