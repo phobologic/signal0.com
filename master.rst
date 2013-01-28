@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/01/27/moving_to_s3
    2013/01/27/error
    2013/01/23/mountain_lion___chrome___2_finger_swipe____ugh___
    2012/07/24/vim_crosshairs
