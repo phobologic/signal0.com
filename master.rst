@@ -4,6 +4,8 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/02/05/retina_macbook_pro___screenshots
+   2013/02/05/retina_macbook_air___screenshots
    2013/02/04/current_python_class___method_in_vim_status_line
    2013/01/29/copy_and_paste_without_formatting
    2013/01/27/moving_to_s3
