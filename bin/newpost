@@ -1,0 +1,14 @@
+#!/bin/sh
+
+title=$*
+
+if [ ! -n "$title" ]
+then
+    echo "syntax: $0 <title>"
+    exit 1
+fi
+
+NEWFILE=`tinker -f -p "$title"`
+
+$EDITOR $NEWFILE
+echo "Finished editing $NEWFILE"
