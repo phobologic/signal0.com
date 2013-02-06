@@ -4,12 +4,11 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/02/06/disabling_aliases_in_pyyaml
    2013/02/05/retina_macbook_pro___screenshots
-   2013/02/05/retina_macbook_air___screenshots
    2013/02/04/current_python_class___method_in_vim_status_line
    2013/01/29/copy_and_paste_without_formatting
    2013/01/27/moving_to_s3
-   2013/01/27/error
    2013/01/23/mountain_lion___chrome___2_finger_swipe____ugh___
    2012/07/24/vim_crosshairs
    2012/07/20/checking_git_commit_message_format_before_commit_ing
@@ -22,3 +21,4 @@ Sitemap
    2012/07/11/modifying_tinkerer_themes
    2012/07/10/signal0_
    pages/about
+   pages/error
