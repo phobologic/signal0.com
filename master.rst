@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/02/23/aws_boto_credentials_and_my_prompt
    2013/02/12/shortcut_your_email_on_ios
    2013/02/06/disabling_aliases_in_pyyaml
    2013/02/05/retina_macbook_pro___screenshots
