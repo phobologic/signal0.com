@@ -26,7 +26,7 @@ In the end I had to use a temporary file, which I'm not super excited about,
 but it only exists for a very short period of time, which is better than what
 we had before.
 
-As my buddy Tim would say: "Don't let best be the enemy of good!"
+As my buddy `Tim`_ would say: "Don't let best be the enemy of good!"
 
 So I added these functions to my *.bash_profile*:
 
@@ -63,6 +63,7 @@ Let me know if you have any questions, or any ideas for improvements.  Thanks!
 
 
 .. _`AWS/Boto Credentials and my prompt`: http://signal0.com/2013/02/23/aws_boto_credentials_and_my_prompt.html
+.. _`Tim`:  http://www.hungry.com/~tspencer/
 
 
 
