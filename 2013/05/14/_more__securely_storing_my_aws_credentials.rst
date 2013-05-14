@@ -34,7 +34,7 @@ So I added these functions to my *.bash_profile*:
 
     function load_aws () {
         AWSKEYFILE=$HOME/.bash_aws_profiles.enc
-        TEMPFILE=`mktemp .bash_aws_profiles.XXXXXXXXXXX`
+        TEMPFILE=`mktemp $HOME/.bash_aws_profiles.XXXXXXXXXXX`
         [ ! -f $AWSKEYFILE ] && echo "Error: Amazon key file ($AWSKEYFILE) not found." && return
         openssl aes-256-cbc -d -a -in $AWSKEYFILE -out $TEMPFILE
         source $TEMPFILE
