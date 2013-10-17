@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/10/17/introducing_nymms
    2013/05/14/_more__securely_storing_my_aws_credentials
    2013/02/23/aws_boto_credentials_and_my_prompt
    2013/02/12/shortcut_your_email_on_ios
