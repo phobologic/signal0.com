@@ -62,9 +62,11 @@ Here's the updated script:
 
     data = {'classes': {'services': services}, 'parameters': services}
 
-    noalias_dumper = yaml.dumper.SafeDumper
-    noalias_dumper.ignore_aliases = lambda self, data: True
-    print yaml.dump(data, default_flow_style=False, Dumper=noalias_dumper)
+    class NoAliasDumper(yaml.dumper.SafeDumper):
+        def ignore_aliases(self, data):
+            return True
+
+    print yaml.dump(data, default_flow_style=False, Dumper=NoAliasDumper)
 
 All the changes are in the last three lines.  First I create an object which
 is a copy of the SafeDumper class.  Then I patch the ignore_aliases method on
